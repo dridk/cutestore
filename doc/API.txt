@@ -1,0 +1,133 @@
+==== CONFIG ==== 
+api.qtstore.org/config
+	-- PARAMS (none)
+	-- RETURN 
+		api version
+		storelib version
+		host
+		contact
+		
+==== USER ( TODO Oauth 2.0 )====
+api.qtstore.org/user/login
+	--PARAMS (POST)
+		username
+		passworld
+		application_id *// Client application authorization ID
+	--RETURN 
+		access_token
+
+api.qtstore.org/user/logout
+	--PARAMS (none)
+	--RETURN (nodata)
+
+api.qtstore.org/user/add
+api.qtstore.org/user/edit/123
+api.qtstore.org/user/delete/123
+
+==== GROUPS ====
+api.qtstore.org/group/add
+api.qtstore.org/group/edit/23
+api.qtstore.org/group/delete/23
+api.qtstore.org/group/adduser/123
+api.qtstore.org/group/remuser/123
+
+
+==== CONTENT ====
+api.qtstore.org/content/search/keyword  //need pagesize
+	-- NOTE : keyworld contains filter ex: keyword = author:labsquare , lang:fr, licence:gpl, os:win32,ubuntu
+	-- PARAMS (none)
+	-- RETURN ( list )
+		id
+		name
+		source
+		version
+		created
+		modified
+		summary
+		description
+		plateform.name
+		icon
+		gpg_signature
+		langage
+		licence.name
+		certified
+		group.name
+
+api.qtstore.org/content/add
+	--PARAMS (POST)
+		name
+		source
+		version
+		created
+		modified
+		summary
+		description
+		plateform.name
+		icon
+		gpg_signature
+		langage
+		licence.name
+		certified
+		group.name
+	-- RETURN (none)
+
+api.qtstore.org/content/edit/141
+	--PARAMS(POST)
+		name
+		source
+		version
+		created
+		modified
+		summary
+		description
+		plateform.name
+		icon
+		gpg_signature
+		langage
+		licence.name
+		certified
+		group.name
+	-- RETURN (none)
+		
+api.qtstore.org/content/delete/141	
+	--PARAMS(none)
+	-- RETURN(none)
+
+
+==== MEDIA ===
+api.qtstore.org/media/add/141
+	--PARAMS(post)	
+	--RETURN (none)
+
+api.qtstore.org/media/delete/141/2
+	--PARAMS(none)
+	--RETURN(none)
+
+=== TAGS ===
+
+api.qtstore.org/tag/add/141/music
+api.qtstore.org/tag/delete/141/music
+	
+==== ACTIVITY ====
+api.qtstore.org/activity/add/contentid
+	--PARAMS(post)
+		message
+api.qtstore.org/activity/edit/id
+api.qtstore.org/activity/delete/id
+api.qtstore.org/activity/list/contentid
+
+
+
+==== COMMENT ====
+api.qtstore.org/comment/add/activityid
+api.qtstore.org/comment/edit/id
+api.qtstore.org/comment/delete/id
+api.qtstore.org/comment/list/activityid
+
+
+
+	
+	
+
+		
+

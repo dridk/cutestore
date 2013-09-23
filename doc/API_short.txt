@@ -1,0 +1,64 @@
+//======== users
+api.qtstore.org/config
+
+//======== users REST
+api.qtstore.org/user/login
+api.qtstore.org/user/logout
+api.qtstore.org/user/add
+api.qtstore.org/user/edit/id
+api.qtstore.org/user/delete/id
+api.qtstore.org/user/list
+api.qtstore.org/user/addcontent/contentid
+api.qtstore.org/user/deletecontent/contentid
+api.qtstore.org/user/ratecontent/contentid/score
+
+//======== groups
+api.qtstore.org/group/add
+api.qtstore.org/group/edit/id
+api.qtstore.org/group/delete/id
+api.qtstore.org/group/adduser/userid
+api.qtstore.org/group/remuser/userid
+api.qtstore.org/group/list
+api.qtstore.org/user/list/groupid
+
+//======== content
+api.qtstore.org/content/search/keyword 
+api.qtstore.org/content/add
+api.qtstore.org/content/edit/id
+api.qtstore.org/content/delete/id
+api.qtstore.org/content/addtag/contentid/music
+api.qtstore.org/content/remtag/contentid/music
+
+//======== Media
+api.qtstore.org/media/add/contentid
+api.qtstore.org/media/edit/id
+api.qtstore.org/media/delete/id
+api.qtstore.org/media/list/contentid
+
+//======== Tag
+api.qtstore.org/tag/add
+api.qtstore.org/tag/edit/id
+api.qtstore.org/tag/delete/id
+api.qtstore.org/tag/list
+
+//======== Activity
+api.qtstore.org/activity/add/contentid
+api.qtstore.org/activity/edit/id
+api.qtstore.org/activity/delete/id
+api.qtstore.org/activity/list/contentid
+
+//======== Comment
+api.qtstore.org/comment/add/activityid
+api.qtstore.org/comment/edit/id
+api.qtstore.org/comment/delete/id
+api.qtstore.org/comment/list/activityid
+
+
+
+
+
+
+
+
+
+
